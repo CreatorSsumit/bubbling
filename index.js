@@ -45,7 +45,10 @@ document.querySelector("#btmpnl").addEventListener("click", e => {
 
         if (guessnumber === Number(e.target.textContent)) {
             score.textContent = 10 + Number(score.textContent)
+
             randomnumguess();
+            panel.innerHTML = '';
+            makebubble();
             timer = 6;
 
         } else {
